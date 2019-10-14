@@ -1,0 +1,16 @@
+GamePackets.cs ------- Porque esta el GameNetworkPacket en el medio
+
+Porque la repartida de mensajes recividos lo hace el PacketsManager y no el MessagesManager que es especifico del juego
+
+Porque el tipo inicialmente esta en el paquete si despues se pone en el header
+
+
+CLASE
+
+Conection Manager --> pasar el manejo de los clientes del networkManager a esto. Network manager solo crea server y cliente y envia y recibe. ConectionManager hace el Conection request -> Challenge request -> challenge response -> Conected
+ 
+UserTypeHeader --> el header va a tener una propiedad que indica si se tiene que leer un userTypeheader.
+
+El tipo de paquete tiene que pasar a la libreria para el header
+
+
